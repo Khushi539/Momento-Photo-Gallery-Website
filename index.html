@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#ccbbaa] text-black">
+    <header class="">
+        <h1 class="text-center font-bold md:text-4xl text-2xl p-2 bg-[#CBA]">Momento📷✨</h1>
+         <p class="p-4 text-center text-lg text-gray-700 max-w-xl mx-auto">
+           A curated collection of moments — from love to laughter, from weddings to childhood smiles.
+        </p>
+        <nav class="sticky top-0 z-50 bg-[#F8F4F0] shadow-md ">
+            <ul class="flex flex-wrap justify-evenly gap-6 bg-[#F8F4F0] p-4 text-lg font-medium bg-[#fefaf6] text-grey-800 shadow-md">
+                <li class="hover:text-[#CBA135] hover:underline underline-offset-4 transition duration-150  active:scale-95"><a href="#couple">couple</a></li>
+                <li class="hover:text-[#CBA135] hover:underline transition duration-100 underline-offset-4"><a href="#bride">bride</a></li>
+                <li class="hover:text-[#CBA135] hover:underline transition duration-100 underline-offset-4"><a href="#groom">groom</a></li>
+                <li class="hover:text-[#CBA135] hover:underline transition duration-100 underline-offset-4"><a href="#wedding">wedding family</a></li>
+                <li class="hover:text-[#CBA135] hover:underline transition duration-100 underline-offset-4"><a href="#candid">candid</a></li>
+                <li class="hover:text-[#CBA135] hover:underline transition duration-100 underline-offset-4"><a href="#child">child</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div class="flex justify-center mt-6">
+      <input type="text" placeholder="search category (e.g, bride, child)..." oninput="filterSections(this.value)" class="w-96 px-4 py-2 rounded-lg border-grey-300 focus:outline:none focus:ring-2 focus:ring-[#CBA135]">
+    </div>
+
+
+    
+    <main>
+         <h2 class="text-3xl font-semibold mt-10 mb-4 text-center" id="couple">Couple Moments 💑</h2>
+         <p class="text-sm text-gray-600 text-center mb-2 italic">Click any image to view in full size</p>
+        <div class="whitespace-nowrap overflow-x-auto">
+            <div id="couple-section" class="flex gap-4">
+                <img src="images/couple-1.avif" onclick="openLightbox(this.src)" class="cursor-pointer hover:scale-105 hover:shadow-2xl h-64 md:h-96 w-auto object-cover rounded-lg inline-block" alt="">
+                <img src="images/couple-2.avif"onclick="openLightbox(this.src)" class="cursor-pointer hover:scale-105 hover:shadow-2xl h-64 md:h-96 w-auto object-cover  rounded-lg inline-block" alt="">
+               <img src="images/couple-3.avif" onclick="openLightbox(this.src)" class="cursor-pointer hover:scale-105 hover:shadow-2xl h-64 md:h-96 w-auto object-cover  rounded-lg inline-block" alt="">
+               <img src="images/couple-4.avif" onclick="openLightbox(this.src)" class="cursor-pointer hover:scale-105 hover:shadow-2xl h-64 md:h-96 w-auto object-cover  rounded-lg inline-block" alt="">
+               <img src="images/couple-5.avif" onclick="openLightbox(this.src)" class="cursor-pointer hover:scale-105 hover:shadow-2xl h-64 md:h-96 w-auto object-cover  rounded-lg inline-block" alt="">
+               <img src="images/couple-6.avif" onclick="openLightbox(this.src)" class="cursor-pointer hover:scale-105 hover:shadow-2xl h-64 md:h-96 w-auto object-cover  rounded-lg inline-block" alt="">
+               <img src="images/couple-7.avif" onclick="openLightbox(this.src)" class="cursor-pointer hover:scale-105 hover:shadow-2xl h-64 md:h-96 w-auto object-cover  rounded-lg inline-block" alt="">
+               <img src="images/indian-couple.avif" onclick="openLightbox(this.src)" class="cursor-pointer hover:scale-105 hover:shadow-2xl h-64 md:h-96 w-auto object-cover w-auto  rounded-lg inline-block" alt="">
+            </div>
+        </div>
+
+        <h2 class="text-3xl font-semibold mt-10 mb-4 text-center" id="bride">Bride Portraits 👰‍♀️</h2>
+        <p class="text-sm text-gray-600 text-center mb-2 italic">Click any image to view in full size</p>
+        <div id="bride" class="whitespace-nowrap overflow-x-auto">
+            <div class="flex gap-4">
+                <img src="images/bride-1.avif" title="Click to enlarge" onclick="openLightbox(this.src)" class="cursor-pointer hover:scale-105 hover:shadow-2xl h-64 md:h-96 w-auto object-cover rounded-lg inline-block" alt="">
+                <img src="images/bride-2.avif" onclick="openLightbox(this.src)" class="cursor-pointer hover:scale-105 hover:shadow-2xl h-64 md:h-96 w-auto object-cover rounded-lg inline-block" alt="">
+                <img src="images/bride-3.avif" onclick="openLightbox(this.src)" class="cursor-pointer hover:scale-105 hover:shadow-2xl h-64 md:h-96 w-auto object-cover rounded-lg inline-block" alt="">
+                <img src="images/bride-4.avif" onclick="openLightbox(this.src)" class="cursor-pointer hover:scale-105 hover:shadow-2xl h-64 md:h-96 w-auto object-cover rounded-lg inline-block" alt="">
+                <img src="images/bride-5.avif" onclick="openLightbox(this.src)" class="cursor-pointer hover:scale-105 hover:shadow-2xl h-64 md:h-96 w-auto object-cover rounded-lg inline-block" alt="">
+                <img src="images/bride-6.avif" onclick="openLightbox(this.src)" class="cursor-pointer hover:scale-105 hover:shadow-2xl h-64 md:h-96 w-auto object-cover rounded-lg inline-block" alt="">
+                <img src="images/bride-7.avif" onclick="openLightbox(this.src)" class="cursor-pointer hover:scale-105 hover:shadow-2xl h-64 md:h-96 w-auto object-cover rounded-lg inline-block" alt="">
+                <img src="images/bride-8.avif" onclick="openLightbox(this.src)" class="cursor-pointer hover:scale-105 hover:shadow-2xl h-64 md:h-96 w-auto object-cover rounded-lg inline-block" alt="">
+            </div>
+        </div>
+
+
+        <h2 class="text-3xl font-semibold mt-10 mb-4 text-center" id="groom">Groom Portraits 🤵‍♂️</h2>
+        <p class="text-sm text-gray-600 text-center mb-2 italic">Click any image to view in full size</p>
+        <div id="groom" class="whitespace-nowrap overflow-x-auto">
+            <div class="flex gap-4">
+                <img src="images/groom-1.avif" onclick="openLightbox(this.src)" class="cursor-pointer hover:scale-105 hover:shadow-2xl h-64 md:h-96 w-auto object-cover rounded-lg inline-block" alt="">
+                <img src="images/groom-2.avif" onclick="openLightbox(this.src)" class="cursor-pointer hover:scale-105 hover:shadow-2xl h-64 md:h-96 w-auto object-cover rounded-lg inline-block" alt="">
+                <img src="images/groom-3.avif" onclick="openLightbox(this.src)" class="cursor-pointer hover:scale-105 hover:shadow-2xl h-64 md:h-96 w-auto object-cover rounded-lg inline-block" alt="">
+                <img src="images/groom-4.avif" onclick="openLightbox(this.src)" class="cursor-pointer hover:scale-105 hover:shadow-2xl h-64 md:h-96 w-auto object-cover rounded-lg inline-block" alt="">
+                <img src="images/groom-5.avif" onclick="openLightbox(this.src)" class="cursor-pointer hover:scale-105 hover:shadow-2xl h-64 md:h-96 w-auto object-cover rounded-lg inline-block" alt="">
+                <img src="images/groom-6.avif" onclick="openLightbox(this.src)" class="cursor-pointer hover:scale-105 hover:shadow-2xl h-64 md:h-96 w-auto object-cover rounded-lg inline-block" alt="">
+                <img src="images/groom-7.avif" onclick="openLightbox(this.src)" class="cursor-pointer hover:scale-105 hover:shadow-2xl h-64 md:h-96 w-auto object-cover rounded-lg inline-block" alt="">
+            </div>
+        </div>
+         
+        <h2 class="text-3xl font-semibold mt-10 mb-4 text-center" id="wedding">Wedding Family Moments 👨‍👩‍👧‍👦</h2>
+        <p class="text-sm text-gray-600 text-center mb-2 italic">Click any image to view in full size</p>
+        <div id="wedding" class="whitespace-nowrap overflow-x-auto">
+            <div class="flex gap-4">
+                  <img src="images/family-1.avif" onclick="openLightbox(this.src)" class="cursor-pointer hover:scale-105 hover:shadow-2xl h-64 md:h-96 w-auto object-cover rounded-lg inline-block" alt="">
+                 <img src="images/family-2.avif" onclick="openLightbox(this.src)" class="cursor-pointer hover:scale-105 hover:shadow-2xl h-64 md:h-96 w-auto object-cover rounded-lg inline-block" alt="">
+                 <img src="images/family-3.avif" onclick="openLightbox(this.src)" class="cursor-pointer hover:scale-105 hover:shadow-2xl h-64 md:h-96 w-auto object-cover rounded-lg inline-block" alt="">
+                 <img src="images/family-4.avif" onclick="openLightbox(this.src)" class="cursor-pointer hover:scale-105 hover:shadow-2xl h-64 md:h-96 w-auto object-cover rounded-lg inline-block" alt="">
+                 <img src="images/family-5.avif" onclick="openLightbox(this.src)" class="cursor-pointer hover:scale-105 hover:shadow-2xl h-64 md:h-96 w-auto object-cover rounded-lg inline-block" alt="">
+           </div>
+        </div>
+       
+
+        <h2 class="text-3xl font-semibold mt-10 mb-4 text-center" id="candid">Candid Shots 🎞️</h2>
+        <p class="text-sm text-gray-600 text-center mb-2 italic">Click any image to view in full size</p>
+        <div id="candid" class="whitespace-nowrap overflow-x-auto">
+            <div class="flex gap-4">
+                <img src="images/candid-2.avif" onclick="openLightbox(this.src)" class="cursor-pointer hover:scale-105 hover:shadow-2xl h-64 md:h-96 w-auto object-cover rounded-lg inline-block" alt="">
+                <img src="images/candid-1.avif" onclick="openLightbox(this.src)" class="cursor-pointer hover:scale-105 hover:shadow-2xl h-64 md:h-96 w-auto object-cover rounded-lg inline-block" alt="">
+               <img src="images/candid-3.avif" onclick="openLightbox(this.src)" class="cursor-pointer hover:scale-105 hover:shadow-2xl h-64 md:h-96 w-auto object-cover rounded-lg inline-block" alt="">
+               <img src="images/candid-4.avif" onclick="openLightbox(this.src)" class="cursor-pointer hover:scale-105 hover:shadow-2xl h-64 md:h-96 w-auto object-cover rounded-lg inline-block" alt="">
+              <img src="images/candid-5.avif" onclick="openLightbox(this.src)" class="cursor-pointer hover:scale-105 hover:shadow-2xl h-64 md:h-96 w-auto object-cover rounded-lg inline-block" alt="">
+              <img src="images/candid-6.avif" onclick="openLightbox(this.src)" class="cursor-pointer hover:scale-105 hover:shadow-2xl h-64 md:h-96 w-auto object-cover rounded-lg inline-block" alt="">
+              <img src="images/candid-7.avif" onclick="openLightbox(this.src)" class="cursor-pointer hover:scale-105 hover:shadow-2xl h-64 md:h-96 w-auto object-cover rounded-lg inline-block" alt="">
+              <img src="images/candid-8.avif" onclick="openLightbox(this.src)" class="cursor-pointer hover:scale-105 hover:shadow-2xl h-64 md:h-96 w-auto object-cover rounded-lg inline-block"alt="">
+            </div>
+        </div>
+        
+        <h2 class="text-3xl font-semibold mt-10 mb-4 text-center" id="child">Childhood Smiles 🧒👧</h2>
+        <p class="text-sm text-gray-600 text-center mb-2 italic">Click any image to view in full size</p>
+        <div id="child" class="whitespace-nowrap overflow-x-auto">
+            <div class="flex gap-4">
+                <img src="images/child-1.avif" onclick="openLightbox(this.src)" class="cursor-pointer hover:scale-105 hover:shadow-2xl h-64 md:h-96 w-auto object-cover rounded-lg inline-block" alt="">
+                <img src="images/child-2.avif" onclick="openLightbox(this.src)" class="cursor-pointer hover:scale-105 hover:shadow-2xl  h-64 md:h-96 w-auto object-cover rounded-lg inline-block"alt="">
+                <img src="images/child-4.avif" onclick="openLightbox(this.src)" class="cursor-pointer hover:scale-105 hover:shadow-2xl h-64 md:h-96 w-auto object-cover rounded-lg inline-block"  alt="">
+               <img src="images/child-5.avif" onclick="openLightbox(this.src)" class="cursor-pointer hover:scale-105 hover:shadow-2xl h-64 md:h-96 w-auto object-cover rounded-lg inline-block" alt="">
+               <img src="images/child-6.avif" onclick="openLightbox(this.src)" class="cursor-pointer hover:scale-105 hover:shadow-2xl h-64 md:h-96 w-auto object-cover rounded-lg inline-block" alt="">
+               <img src="images/child-7.avif" onclick="openLightbox(this.src)" class="cursor-pointer hover:scale-105 hover:shadow-2xl h-64 md:h-96 w-auto object-cover rounded-lg inline-block" alt="">
+               <img src="images/child-8.avif" onclick="openLightbox(this.src)" class="cursor-pointer hover:scale-105 hover:shadow-2xl h-64 md:h-96 w-auto object-cover rounded-lg inline-block" alt="">
+               <img src="images/child-9.avif" onclick="openLightbox(this.src)" class="cursor-pointer hover:scale-105 hover:shadow-2xl h-64 md:h-96 w-auto object-cover rounded-lg inline-block" alt="">
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="text-center text-sm text-gray-600 py-6 bg-[#F8F4F0] mt-10">
+      © 2025 Memento by Khushi Pawar. All rights reserved.
+   </footer>
+    
+<!-- Lightbox -->
+<div id="lightbox" class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center hidden z-50">
+  <img id="lightbox-img" class="max-h-[90vh] md:h-full max-w-[90vw] rounded-lg shadow-lg" />
+</div>
+
+<script>
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightbox-img');
+
+  function openLightbox(src) {
+    lightboxImg.src = src;
+    lightbox.classList.remove('hidden');
+  }
+
+  lightbox.addEventListener('click', () => {
+    lightbox.classList.add('hidden');
+  });
+
+
+  const clickSound = new Audio("click.mp3"); // Use a short click sound
+  function openLightbox(src) {
+    clickSound.play();
+    document.getElementById('lightbox-img').src = src;
+    document.getElementById('lightbox').classList.remove('hidden');
+  }
+
+
+
+
+  //filter
+  function filterSections(value) {
+    const allSections = document.querySelectorAll('main > h2, main > div.whitespace-nowrap');
+    let show = false;
+    value = value.toLowerCase();
+
+    for (let i = 0; i < allSections.length; i += 2) {
+      const heading = allSections[i];
+      const section = allSections[i + 1];
+      const match = heading.id.includes(value);
+
+      heading.style.display = match || value === "" ? "block" : "none";
+      section.style.display = match || value === "" ? "flex" : "none";
+    }
+  }
+
+ 
+
+
+</script>
+
+</body>
+</html>
